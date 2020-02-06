@@ -1,0 +1,152 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x16_Female J2
+U 1 1 5E3965AE
+P 9050 2900
+F 0 "J2" H 9078 2876 50  0000 L CNN
+F 1 "Conn_01x16_Female" H 9078 2785 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 9050 2900 50  0001 C CNN
+F 3 "~" H 9050 2900 50  0001 C CNN
+	1    9050 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x16_Female J1
+U 1 1 5E399208
+P 8000 2700
+F 0 "J1" H 8028 2676 50  0000 L CNN
+F 1 "Conn_01x16_Female" H 8028 2585 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 8000 2700 50  0001 C CNN
+F 3 "~" H 8000 2700 50  0001 C CNN
+	1    8000 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2200 7800 2200
+Wire Wire Line
+	7800 2300 8850 2300
+Wire Wire Line
+	7800 2400 8850 2400
+Wire Wire Line
+	7800 2500 8850 2500
+Wire Wire Line
+	7800 2600 8850 2600
+Wire Wire Line
+	7800 2700 8850 2700
+Wire Wire Line
+	7800 2800 8850 2800
+Wire Wire Line
+	8850 2900 7800 2900
+Wire Wire Line
+	7800 3000 8850 3000
+Wire Wire Line
+	7800 3100 8850 3100
+Wire Wire Line
+	7800 3200 8850 3200
+Wire Wire Line
+	7800 3300 8850 3300
+Wire Wire Line
+	7800 3400 8850 3400
+Wire Wire Line
+	7800 3500 8850 3500
+NoConn ~ 8850 3600
+NoConn ~ 8850 3700
+Wire Wire Line
+	7800 2100 8575 2100
+Wire Wire Line
+	8575 2100 8575 1700
+$Comp
+L Device:R_Small R1
+U 1 1 5E3A3E9F
+P 8300 1725
+F 0 "R1" H 8359 1771 50  0000 L CNN
+F 1 "180" H 8359 1680 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8300 1725 50  0001 C CNN
+F 3 "~" H 8300 1725 50  0001 C CNN
+	1    8300 1725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2000 8300 2000
+Wire Wire Line
+	8300 2000 8300 1825
+Wire Wire Line
+	8300 1625 8300 1600
+$Comp
+L Connector:Conn_01x04_Female J3
+U 1 1 5E3A7EE8
+P 9575 2100
+F 0 "J3" V 9421 2248 50  0000 L CNN
+F 1 "Conn_01x04_Female" V 9512 2248 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9575 2100 50  0001 C CNN
+F 3 "~" H 9575 2100 50  0001 C CNN
+	1    9575 2100
+	0    1    1    0   
+$EndComp
+Text HLabel 9575 1700 1    50   BiDi ~ 0
+SDA
+Text HLabel 9675 1700 1    50   Input ~ 0
+SCL
+Wire Wire Line
+	9675 1900 9675 1700
+Wire Wire Line
+	9575 1900 9575 1700
+Wire Wire Line
+	9375 1900 9375 1700
+Wire Wire Line
+	9475 1900 9475 1600
+Wire Wire Line
+	9475 1600 8950 1600
+Text Notes 9150 2900 1    50   ~ 0
+I2C DISPLAY MODUL
+Text Notes 7775 3075 1    50   ~ 0
+1602 DISPLAY 1-14+15-16
+Wire Wire Line
+	8575 1700 8950 1700
+$Comp
+L power:GND #PWR0111
+U 1 1 5E4322A3
+P 8950 1775
+F 0 "#PWR0111" H 8950 1525 50  0001 C CNN
+F 1 "GND" H 8955 1602 50  0000 C CNN
+F 2 "" H 8950 1775 50  0001 C CNN
+F 3 "" H 8950 1775 50  0001 C CNN
+	1    8950 1775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 1775 8950 1700
+Connection ~ 8950 1700
+Wire Wire Line
+	8950 1700 9375 1700
+$Comp
+L power:+5V #PWR0112
+U 1 1 5E432C49
+P 8950 1525
+F 0 "#PWR0112" H 8950 1375 50  0001 C CNN
+F 1 "+5V" H 8965 1698 50  0000 C CNN
+F 2 "" H 8950 1525 50  0001 C CNN
+F 3 "" H 8950 1525 50  0001 C CNN
+	1    8950 1525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 1525 8950 1600
+Connection ~ 8950 1600
+Wire Wire Line
+	8950 1600 8300 1600
+$EndSCHEMATC

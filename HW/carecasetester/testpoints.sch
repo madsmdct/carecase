@@ -1,0 +1,305 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5E3DEA4C
+P 8650 1725
+AR Path="/5E3BA6A3/5E3DEA4C" Ref="J?"  Part="1" 
+AR Path="/5E3DBE35/5E3DEA4C" Ref="J15-TP1"  Part="1" 
+F 0 "J15-TP1" H 8622 1657 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 8622 1748 50  0000 R CNN
+F 2 "MM:P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad" H 8650 1725 50  0001 C CNN
+F 3 "~" H 8650 1725 50  0001 C CNN
+	1    8650 1725
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5E3DEA52
+P 8650 1875
+AR Path="/5E3BA6A3/5E3DEA52" Ref="J?"  Part="1" 
+AR Path="/5E3DBE35/5E3DEA52" Ref="J16-TP2"  Part="1" 
+F 0 "J16-TP2" H 8622 1807 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 8622 1898 50  0000 R CNN
+F 2 "MM:P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad" H 8650 1875 50  0001 C CNN
+F 3 "~" H 8650 1875 50  0001 C CNN
+	1    8650 1875
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5E3DEA58
+P 8650 2025
+AR Path="/5E3BA6A3/5E3DEA58" Ref="J?"  Part="1" 
+AR Path="/5E3DBE35/5E3DEA58" Ref="J17-TP3"  Part="1" 
+F 0 "J17-TP3" H 8622 1957 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 8622 2048 50  0000 R CNN
+F 2 "MM:P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad" H 8650 2025 50  0001 C CNN
+F 3 "~" H 8650 2025 50  0001 C CNN
+	1    8650 2025
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5E3DEA5E
+P 8650 2175
+AR Path="/5E3BA6A3/5E3DEA5E" Ref="J?"  Part="1" 
+AR Path="/5E3DBE35/5E3DEA5E" Ref="J18-TP4"  Part="1" 
+F 0 "J18-TP4" H 8622 2107 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 8622 2198 50  0000 R CNN
+F 2 "MM:P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad" H 8650 2175 50  0001 C CNN
+F 3 "~" H 8650 2175 50  0001 C CNN
+	1    8650 2175
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5E3DEA64
+P 8650 2325
+AR Path="/5E3BA6A3/5E3DEA64" Ref="J?"  Part="1" 
+AR Path="/5E3DBE35/5E3DEA64" Ref="J19-TP6"  Part="1" 
+F 0 "J19-TP6" H 8622 2257 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 8622 2348 50  0000 R CNN
+F 2 "MM:P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad" H 8650 2325 50  0001 C CNN
+F 3 "~" H 8650 2325 50  0001 C CNN
+	1    8650 2325
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5E3DEA6A
+P 8650 2475
+AR Path="/5E3BA6A3/5E3DEA6A" Ref="J?"  Part="1" 
+AR Path="/5E3DBE35/5E3DEA6A" Ref="J20-TP9"  Part="1" 
+F 0 "J20-TP9" H 8622 2407 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 8622 2498 50  0000 R CNN
+F 2 "MM:P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad" H 8650 2475 50  0001 C CNN
+F 3 "~" H 8650 2475 50  0001 C CNN
+	1    8650 2475
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5E3DEA70
+P 8650 2625
+AR Path="/5E3BA6A3/5E3DEA70" Ref="J?"  Part="1" 
+AR Path="/5E3DBE35/5E3DEA70" Ref="J21-TP10"  Part="1" 
+F 0 "J21-TP10" H 8622 2557 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 8622 2648 50  0000 R CNN
+F 2 "MM:P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad" H 8650 2625 50  0001 C CNN
+F 3 "~" H 8650 2625 50  0001 C CNN
+	1    8650 2625
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5E3DEA76
+P 8650 2775
+AR Path="/5E3BA6A3/5E3DEA76" Ref="J?"  Part="1" 
+AR Path="/5E3DBE35/5E3DEA76" Ref="J22-TP11"  Part="1" 
+F 0 "J22-TP11" H 8622 2707 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 8622 2798 50  0000 R CNN
+F 2 "MM:P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad" H 8650 2775 50  0001 C CNN
+F 3 "~" H 8650 2775 50  0001 C CNN
+	1    8650 2775
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5E3DEA7C
+P 8650 2925
+AR Path="/5E3BA6A3/5E3DEA7C" Ref="J?"  Part="1" 
+AR Path="/5E3DBE35/5E3DEA7C" Ref="J23-TP12"  Part="1" 
+F 0 "J23-TP12" H 8622 2857 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 8622 2948 50  0000 R CNN
+F 2 "MM:P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad" H 8650 2925 50  0001 C CNN
+F 3 "~" H 8650 2925 50  0001 C CNN
+	1    8650 2925
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5E3DEA82
+P 8650 3075
+AR Path="/5E3BA6A3/5E3DEA82" Ref="J?"  Part="1" 
+AR Path="/5E3DBE35/5E3DEA82" Ref="J24-TP15"  Part="1" 
+F 0 "J24-TP15" H 8622 3007 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 8622 3098 50  0000 R CNN
+F 2 "MM:P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad" H 8650 3075 50  0001 C CNN
+F 3 "~" H 8650 3075 50  0001 C CNN
+	1    8650 3075
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5E3DEA88
+P 8650 3225
+AR Path="/5E3BA6A3/5E3DEA88" Ref="J?"  Part="1" 
+AR Path="/5E3DBE35/5E3DEA88" Ref="J25-TP18"  Part="1" 
+F 0 "J25-TP18" H 8622 3157 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 8622 3248 50  0000 R CNN
+F 2 "MM:P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad" H 8650 3225 50  0001 C CNN
+F 3 "~" H 8650 3225 50  0001 C CNN
+	1    8650 3225
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J23-TP?
+U 1 1 5E3E0E02
+P 8650 3375
+AR Path="/5E3BA6A3/5E3E0E02" Ref="J23-TP?"  Part="1" 
+AR Path="/5E3DBE35/5E3E0E02" Ref="J26-TP5"  Part="1" 
+F 0 "J26-TP5" H 8622 3307 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 8622 3398 50  0000 R CNN
+F 2 "MM:P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad" H 8650 3375 50  0001 C CNN
+F 3 "~" H 8650 3375 50  0001 C CNN
+	1    8650 3375
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J24-TP?
+U 1 1 5E3E0E08
+P 8650 3525
+AR Path="/5E3BA6A3/5E3E0E08" Ref="J24-TP?"  Part="1" 
+AR Path="/5E3DBE35/5E3E0E08" Ref="J27-TP26"  Part="1" 
+F 0 "J27-TP26" H 8622 3457 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 8622 3548 50  0000 R CNN
+F 2 "MM:P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad" H 8650 3525 50  0001 C CNN
+F 3 "~" H 8650 3525 50  0001 C CNN
+	1    8650 3525
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J25-TP?
+U 1 1 5E3E0E0E
+P 8650 3675
+AR Path="/5E3BA6A3/5E3E0E0E" Ref="J25-TP?"  Part="1" 
+AR Path="/5E3DBE35/5E3E0E0E" Ref="J28-TP27"  Part="1" 
+F 0 "J28-TP27" H 8622 3607 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 8622 3698 50  0000 R CNN
+F 2 "MM:P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad" H 8650 3675 50  0001 C CNN
+F 3 "~" H 8650 3675 50  0001 C CNN
+	1    8650 3675
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x16_Male J15
+U 1 1 5E3E19EF
+P 5700 2425
+F 0 "J15" H 5808 3306 50  0000 C CNN
+F 1 "Conn_01x16_Male" H 5808 3215 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Horizontal" H 5700 2425 50  0001 C CNN
+F 3 "~" H 5700 2425 50  0001 C CNN
+	1    5700 2425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1825 8200 1825
+Wire Wire Line
+	8200 1825 8200 1725
+Wire Wire Line
+	8200 1725 8450 1725
+Wire Wire Line
+	5900 1925 8450 1925
+Wire Wire Line
+	8450 1925 8450 1875
+Wire Wire Line
+	8450 2025 5900 2025
+Wire Wire Line
+	5900 2125 8450 2125
+Wire Wire Line
+	8450 2125 8450 2175
+Wire Wire Line
+	8450 2325 8375 2325
+Wire Wire Line
+	8375 2325 8375 2225
+Wire Wire Line
+	8375 2225 5900 2225
+Wire Wire Line
+	5900 2325 8275 2325
+Wire Wire Line
+	8275 2325 8275 2475
+Wire Wire Line
+	8275 2475 8450 2475
+Wire Wire Line
+	8450 2625 8150 2625
+Wire Wire Line
+	8150 2625 8150 2425
+Wire Wire Line
+	8150 2425 5900 2425
+Wire Wire Line
+	5900 2525 8025 2525
+Wire Wire Line
+	8025 2525 8025 2775
+Wire Wire Line
+	8025 2775 8450 2775
+Wire Wire Line
+	5900 2625 7900 2625
+Wire Wire Line
+	7900 2625 7900 2925
+Wire Wire Line
+	7900 2925 8450 2925
+Wire Wire Line
+	5900 2725 7775 2725
+Wire Wire Line
+	7775 2725 7775 3075
+Wire Wire Line
+	7775 3075 8450 3075
+Wire Wire Line
+	5900 2825 7650 2825
+Wire Wire Line
+	7650 2825 7650 3225
+Wire Wire Line
+	7650 3225 8450 3225
+Wire Wire Line
+	5900 2925 7525 2925
+Wire Wire Line
+	7525 2925 7525 3375
+Wire Wire Line
+	7525 3375 8450 3375
+Wire Wire Line
+	5900 3025 7400 3025
+Wire Wire Line
+	7400 3025 7400 3525
+Wire Wire Line
+	7400 3525 8450 3525
+Wire Wire Line
+	5900 3125 7275 3125
+Wire Wire Line
+	7275 3125 7275 3675
+Wire Wire Line
+	7275 3675 8450 3675
+$Comp
+L power:GND #PWR05
+U 1 1 5E3EB0C7
+P 6000 3325
+F 0 "#PWR05" H 6000 3075 50  0001 C CNN
+F 1 "GND" H 6005 3152 50  0000 C CNN
+F 2 "" H 6000 3325 50  0001 C CNN
+F 3 "" H 6000 3325 50  0001 C CNN
+	1    6000 3325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3225 6000 3225
+Wire Wire Line
+	6000 3225 6000 3325
+Wire Wire Line
+	5900 1725 6000 1725
+Wire Wire Line
+	6000 1725 6000 3225
+Connection ~ 6000 3225
+$EndSCHEMATC

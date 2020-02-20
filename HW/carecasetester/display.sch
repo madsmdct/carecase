@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -75,7 +75,7 @@ U 1 1 5E3A3E9F
 P 8300 1725
 F 0 "R1" H 8359 1771 50  0000 L CNN
 F 1 "180" H 8359 1680 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8300 1725 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8300 1725 50  0001 C CNN
 F 3 "~" H 8300 1725 50  0001 C CNN
 	1    8300 1725
 	1    0    0    -1  

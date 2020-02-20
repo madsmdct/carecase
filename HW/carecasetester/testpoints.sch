@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -183,19 +183,6 @@ F 3 "~" H 8650 3525 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J25-TP?
-U 1 1 5E3E0E0E
-P 8650 3675
-AR Path="/5E3BA6A3/5E3E0E0E" Ref="J25-TP?"  Part="1" 
-AR Path="/5E3DBE35/5E3E0E0E" Ref="J28-TP27"  Part="1" 
-F 0 "J28-TP27" H 8622 3607 50  0000 R CNN
-F 1 "Conn_01x01_Male" H 8622 3698 50  0000 R CNN
-F 2 "MM:P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad" H 8650 3675 50  0001 C CNN
-F 3 "~" H 8650 3675 50  0001 C CNN
-	1    8650 3675
-	-1   0    0    1   
-$EndComp
-$Comp
 L Connector:Conn_01x16_Male J15
 U 1 1 5E3E19EF
 P 5700 2425
@@ -216,8 +203,6 @@ Wire Wire Line
 	5900 1925 8450 1925
 Wire Wire Line
 	8450 1925 8450 1875
-Wire Wire Line
-	8450 2025 5900 2025
 Wire Wire Line
 	5900 2125 8450 2125
 Wire Wire Line
@@ -259,8 +244,6 @@ Wire Wire Line
 Wire Wire Line
 	7775 3075 8450 3075
 Wire Wire Line
-	5900 2825 7650 2825
-Wire Wire Line
 	7650 2825 7650 3225
 Wire Wire Line
 	7650 3225 8450 3225
@@ -276,12 +259,6 @@ Wire Wire Line
 	7400 3025 7400 3525
 Wire Wire Line
 	7400 3525 8450 3525
-Wire Wire Line
-	5900 3125 7275 3125
-Wire Wire Line
-	7275 3125 7275 3675
-Wire Wire Line
-	7275 3675 8450 3675
 $Comp
 L power:GND #PWR05
 U 1 1 5E3EB0C7
@@ -300,6 +277,29 @@ Wire Wire Line
 Wire Wire Line
 	5900 1725 6000 1725
 Wire Wire Line
-	6000 1725 6000 3225
+	6000 1725 6000 3125
 Connection ~ 6000 3225
+Wire Wire Line
+	5900 3125 6000 3125
+Connection ~ 6000 3125
+Wire Wire Line
+	6000 3125 6000 3225
+Text HLabel 6350 4050 0    50   Input ~ 0
+TP4
+Text HLabel 6750 4250 0    50   Input ~ 0
+TP5
+Wire Wire Line
+	6750 4250 6750 2825
+Wire Wire Line
+	5900 2825 6750 2825
+Connection ~ 6750 2825
+Wire Wire Line
+	6750 2825 7650 2825
+Wire Wire Line
+	6350 4050 6350 2025
+Wire Wire Line
+	5900 2025 6350 2025
+Connection ~ 6350 2025
+Wire Wire Line
+	6350 2025 8450 2025
 $EndSCHEMATC

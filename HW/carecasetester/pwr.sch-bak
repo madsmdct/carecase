@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -19,7 +19,7 @@ U 1 1 5E43E40C
 P 3700 1275
 F 0 "J5" V 3762 1319 50  0000 L CNN
 F 1 "12V_Psu" V 3853 1319 50  0000 L CNN
-F 2 "" H 3700 1275 50  0001 C CNN
+F 2 "athir:Friwo_Texas_2-pin_Plug(1321609)" H 3700 1275 50  0001 C CNN
 F 3 "~" H 3700 1275 50  0001 C CNN
 	1    3700 1275
 	0    1    1    0   
@@ -45,7 +45,7 @@ U 1 1 5E43F2F8
 P 6350 1825
 F 0 "U2" H 6350 2067 50  0000 C CNN
 F 1 "L7805" H 6350 1976 50  0000 C CNN
-F 2 "" H 6375 1675 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6375 1675 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 6350 1775 50  0001 C CNN
 	1    6350 1825
 	1    0    0    -1  
@@ -114,7 +114,7 @@ U 1 1 5E4433EB
 P 6900 1925
 F 0 "C3" V 6850 1800 50  0000 L CNN
 F 1 "100µf" V 7000 1800 50  0000 L CNN
-F 2 "" H 6900 1925 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6900 1925 50  0001 C CNN
 F 3 "~" H 6900 1925 50  0001 C CNN
 	1    6900 1925
 	1    0    0    -1  
@@ -126,7 +126,7 @@ U 1 1 5E443BBB
 P 6675 1925
 F 0 "C2" V 6600 1800 50  0000 L CNN
 F 1 "100nf" V 6775 1800 50  0000 L CNN
-F 2 "" H 6675 1925 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6675 1925 50  0001 C CNN
 F 3 "~" H 6675 1925 50  0001 C CNN
 	1    6675 1925
 	1    0    0    -1  
@@ -140,7 +140,7 @@ U 1 1 5E443F52
 P 5950 1925
 F 0 "C1" V 5875 1775 50  0000 L CNN
 F 1 "100µf" V 6050 1775 50  0000 L CNN
-F 2 "" H 5950 1925 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5950 1925 50  0001 C CNN
 F 3 "~" H 5950 1925 50  0001 C CNN
 	1    5950 1925
 	1    0    0    -1  

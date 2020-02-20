@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -39,12 +39,15 @@ F3 "D2" I R 3400 2550 50
 F4 "D3" I R 3400 2625 50 
 F5 "D4" I R 3400 2700 50 
 F6 "D5" I R 3400 2775 50 
+F7 "RELAY" I R 3400 2850 50 
 $EndSheet
 $Sheet
-S 7750 3100 700  375 
+S 4150 3800 700  375 
 U 5E3DBE35
 F0 "testpoints" 50
 F1 "testpoints.sch" 50
+F2 "TP4" I R 4850 3900 50 
+F3 "TP5" I R 4850 4000 50 
 $EndSheet
 Wire Wire Line
 	5275 3100 3975 3100
@@ -174,9 +177,6 @@ NoConn ~ 6475 2700
 NoConn ~ 5275 2700
 NoConn ~ 5275 2800
 NoConn ~ 5275 2900
-NoConn ~ 5275 3500
-NoConn ~ 5275 3600
-NoConn ~ 5275 3700
 NoConn ~ 5275 3800
 Wire Wire Line
 	6725 2450 6975 2450
@@ -326,4 +326,36 @@ Wire Wire Line
 Connection ~ 6125 2275
 Wire Wire Line
 	6125 2275 6125 1800
+$Sheet
+S 2575 3450 825  600 
+U 5E3E43C1
+F0 "RELAY" 50
+F1 "relay.sch" 50
+F2 "Relay_Driver" I R 3400 3750 50 
+F3 "RELAY" I R 3400 3575 50 
+$EndSheet
+Wire Wire Line
+	3400 3575 3575 3575
+Wire Wire Line
+	3575 3575 3575 2850
+Wire Wire Line
+	3575 2850 3400 2850
+Wire Wire Line
+	3400 3750 3750 3750
+Wire Wire Line
+	3750 3750 3750 3500
+Wire Wire Line
+	3750 3500 5275 3500
+Wire Wire Line
+	4850 3900 4950 3900
+Wire Wire Line
+	4950 3900 4950 3600
+Wire Wire Line
+	4950 3600 5275 3600
+Wire Wire Line
+	4850 4000 5075 4000
+Wire Wire Line
+	5075 4000 5075 3700
+Wire Wire Line
+	5075 3700 5275 3700
 $EndSCHEMATC

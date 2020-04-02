@@ -41,7 +41,7 @@ U 1 1 5E43F2F8
 P 6350 1825
 F 0 "U2" H 6350 2067 50  0000 C CNN
 F 1 "L7805" H 6350 1976 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6375 1675 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 6375 1675 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 6350 1775 50  0001 C CNN
 	1    6350 1825
 	1    0    0    -1  

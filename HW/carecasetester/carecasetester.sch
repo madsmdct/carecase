@@ -331,8 +331,8 @@ S 2575 3450 825  600
 U 5E3E43C1
 F0 "RELAY" 50
 F1 "relay.sch" 50
-F2 "Relay_Driver" I R 3400 3750 50 
-F3 "RELAY" I R 3400 3575 50 
+F2 "Relay_driver" I R 3400 3750 50 
+F3 "RELAY" O R 3400 3575 50 
 $EndSheet
 Wire Wire Line
 	3400 3575 3575 3575

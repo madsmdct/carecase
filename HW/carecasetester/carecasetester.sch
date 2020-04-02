@@ -99,7 +99,7 @@ Wire Wire Line
 Wire Wire Line
 	6725 3100 6725 3225
 Wire Wire Line
-	6725 3225 7300 3225
+	6725 3225 6850 3225
 Wire Wire Line
 	7300 3225 7300 3125
 Connection ~ 7300 3125
@@ -358,4 +358,23 @@ Wire Wire Line
 	5075 4000 5075 3700
 Wire Wire Line
 	5075 3700 5275 3700
+$Comp
+L Device:R_Small R28
+U 1 1 5E870DAA
+P 6850 3125
+F 0 "R28" H 6909 3171 50  0000 L CNN
+F 1 "47k" H 6909 3080 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6850 3125 50  0001 C CNN
+F 3 "~" H 6850 3125 50  0001 C CNN
+	1    6850 3125
+	1    0    0    -1  
+$EndComp
+Connection ~ 6850 3225
+Wire Wire Line
+	6850 3225 7300 3225
+Wire Wire Line
+	6850 3025 6850 2775
+Wire Wire Line
+	6850 2775 6625 2775
+Connection ~ 6625 2775
 $EndSCHEMATC

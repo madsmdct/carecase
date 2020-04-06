@@ -714,17 +714,6 @@ Wire Wire Line
 Connection ~ 9675 2550
 Wire Wire Line
 	9675 2550 9775 2550
-$Comp
-L power:+5V #PWR02
-U 1 1 5E464082
-P 11025 2625
-F 0 "#PWR02" H 11025 2475 50  0001 C CNN
-F 1 "+5V" H 11040 2798 50  0000 C CNN
-F 2 "" H 11025 2625 50  0001 C CNN
-F 3 "" H 11025 2625 50  0001 C CNN
-	1    11025 2625
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10925 2650 11025 2650
 Wire Wire Line
@@ -748,10 +737,12 @@ Wire Wire Line
 Wire Wire Line
 	9475 1925 9600 1925
 Text HLabel 9600 1600 1    50   Input ~ 0
-RELAY
+RELAY12V
 Wire Wire Line
 	9600 1600 9600 1925
 Connection ~ 9600 1925
 Wire Wire Line
 	9600 1925 9775 1925
+Text HLabel 11025 2625 1    50   Input ~ 0
+RELAYBAT
 $EndSCHEMATC

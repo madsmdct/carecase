@@ -511,11 +511,11 @@ X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# athir_AZ952
+# carecasetester-rescue_AZ952-athir
 #
-DEF athir_AZ952 K 0 40 Y Y 1 L N
+DEF carecasetester-rescue_AZ952-athir K 0 40 Y Y 1 L N
 F0 "K" -350 250 45 H V L BNN
-F1 "athir_AZ952" 0 -100 45 H V L BNN
+F1 "carecasetester-rescue_AZ952-athir" 0 -100 45 H V L BNN
 F2 "" 0 -50 60 H I C CNN
 F3 "" 0 -50 60 H I C CNN
 F4 "315030000" 30 100 20 H I C CNN "SKU"

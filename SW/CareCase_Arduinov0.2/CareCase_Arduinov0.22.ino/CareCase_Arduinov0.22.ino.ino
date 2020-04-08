@@ -71,6 +71,93 @@ void selectPort(int portNo)
   Serial.print("]\n");
 }
 
+
+
+
+bool messure(int portnr, int l, int h)
+{
+  int x;
+  selectPort(portnr);
+  x = analogRead(A0);
+ 
+  if(x < l)
+  {
+   return false;
+  }  
+  if(x > h)
+  {
+   return false;  
+    
+    }
+   return true;
+}
+
+/*      
+ *      12V= if(messure(x,647,703))
+ *       5V= if(messure(x,607,743))
+ *     4.5V= if(messure(x,600,750))
+ *     3.7V= if(messure(x,587,766))
+ *     3.3V= if(messure(x,573,777))
+ *     
+ *     3V-4.5V= if(messure(x,444,666))
+ */
+
+
+void pec(int x)
+{
+  char txt[18];                               //aray consisting of 18 charecters called txt
+  sprintf(txt,"ERROR CODE %d",x);             //
+  lcd.clear();
+  lcd.print(txt);
+  lcd.setCursor(0,1);
+
+  switch(x)
+  {
+    case 0: lcd.print("OK"); break;
+    case 1: lcd.print("3v3 LDO"); break;
+    case 2: lcd.print("4v5 LDO GSM ONLY"); break;
+    case 3: lcd.print("DEFECTIVE FUSE"); break;
+    case 4: lcd.print("12V POWER MUX"); break;
+    case 5: lcd.print("12V POWER ON/OFF"); break;
+    case 6: lcd.print("5V POWER MUX"); break;
+    case 7: lcd.print("5V POWER BUCK"); break;
+    case 8: lcd.print("5V POWER MUX"); break;
+    case 9: lcd.print("5V BOOST SUPPLY"); break;
+    case 10: lcd.print("12V POWER MUX"); break;
+    case 11: lcd.print("12V BOOST CIRC."); break;
+    case 12: lcd.print("BATT ON/OFF CTR"); break;
+  }
+}
+/*
+void pec(int x)
+{
+  char txt[18];                               //aray consisting of 18 charecters called txt
+  sprintf(txt,"ERROR CODE %d",x);             //
+  lcd.clear();
+  lcd.print(txt);
+  lcd.setCursor(0,1);
+
+  switch(x)
+  {
+    case 0: Serial.print("OK"); break;
+    case 1: Serial.print("3v3 LDO"); break;
+    case 2: Serial.print("4v5 LDO GSM ONLY"); break;
+    case 3: Serial.print("DEFECTIVE FUSE"); break;
+    case 4: Serial.print("12V POWER MUX"); break;
+    case 5: Serial.print("12V POWER ON/OFF"); break;
+    case 6: Serial.print("5V POWER MUX"); break;
+    case 7: Serial.print("5V POWER BUCK"); break;
+    case 8: Serial.print("5V POWER MUX"); break;
+    case 9: Serial.print("5V BOOST SUPPLY"); break;
+    case 10: Serial.print("12V POWER MUX"); break;
+    case 11: Serial.print("12V BOOST CIRC."); break;
+    case 12: Serial.print("BATT ON/OFF CTR"); break;
+  }
+}
+*/
+
+
+
 void waitbutton()
 {
         // for (int i = 0; i <= 50; i++)
@@ -132,134 +219,152 @@ void loop() {
     delay(512);              // wait 1 sec
     
   
-  selectPort(9);                                        //Read TP23 (Needs to be 12V made to be about 3.3v)
-    if((analogRead(A0) > 512)) 
-   {
-    selectPort(6);                                      //Read TP22 (Needs to be 5V made to be about 3.3v)
-      if((analogRead(A0) > 512))
-        {
-      selectPort(11);                                   //Read TP20 (Needs to be 3,3V made to be about 3.27v)
-        if((analogRead(A0) > 512)) 
-          {
-            lcd.clear();
-            lcd.print("Error Code 1");
-            lcd.setCursor(0,1);
-            lcd.print("3v3 LDO ");
-            Serial.print("FEJL-1");
-            Serial.print("\n");
-            waitbutton();
+                                         
+  // if(messure(9,647,703))                                             
+      if(messure(9,512,512))
+      {
+                                                        
+                     //if(messure(6,607,743))
+                        if(messure(6,512,512))
+                        {
+                                                       
+                               //    if(messure(11,573,777)) 
+                                      if(messure(11,512,512)) 
+                                      {
+                                      pec(1);
+                                      Serial.print("FEJL-1");
+                                      Serial.print("\n");
+                                      waitbutton();
            
-           }
-            if((analogRead(A0) > 512)) 
-            {
-            lcd.clear();
-            lcd.print("Error Code 1");
-            lcd.setCursor(0,1);
-            lcd.print("3v3 LDO ");
-            Serial.print("FEJL-1");
-            Serial.print("\n");
-            waitbutton();
+                                      
+                                //   if(messure(10,587,766))
+                                      }else if(messure(10,512,512)) 
+                                      {
+                                      pec(2);
+                                      Serial.print("FEJL-2");
+                                      Serial.print("\n");
+                                      waitbutton();
+                                      } //ENDIF
+
+
+
+
+
+
+
             
-            }else(selectPort(2));
-           
-            if((analogRead(A0) > 512))
-              {
-                lcd.clear();               
-                lcd.print("Error Code 6");
-                lcd.setCursor(0,1);
-                lcd.print("5V POWER MUX");
-                Serial.print("Fejl-6");
-                Serial.print("\n");
-                waitbutton();
+                 //    }else if(messure(2,607,743))
+                        }else if(messure(2,512,512))
+                        {
+                        pec(6);
+                        Serial.print("Fejl-6");
+                        Serial.print("\n");
+                        waitbutton();
                 
-              }
-              if((analogRead(A0) > 512))
-              {
-                lcd.clear();               
-                lcd.print("Error Code 7");
-                lcd.setCursor(0,1);
-                lcd.print("5V POWER BUCK");
-                Serial.print("Fejl-7");
-                Serial.print("\n");
-                waitbutton();
+              
+                        }else
+                        {
+                        pec(7);
+                        Serial.print("Fejl-7");
+                        Serial.print("\n");
+                        waitbutton();
                 
-              }
-             
-             
+                        } //ENDIF
      
-           }
-        
-        }
-        else
+           
+       
+      }else
         {
-          selectPort(8);
-          if((analogRead(A0) > 512))
-         {
-            lcd.clear();               
-            lcd.print("Error Code 3");
-            lcd.setCursor(0,1);
-            lcd.print("DEFECTIVE FUSE");
-            Serial.print("Fejl-3");
-            Serial.print("\n");
-            waitbutton(); 
-         }
-          selectPort(1);       
-          if((analogRead(A0) > 512))
-          {
-            lcd.clear();               
-            lcd.print("Error Code 4");
-            lcd.setCursor(0,1);
-            lcd.print("12V POWER MUX");
-            Serial.print("Fejl-4");
-            Serial.print("\n");
-            waitbutton(); 
-          }
-          selectPort(0);       
-          if((analogRead(A0) > 512))
-          {
-            lcd.clear();               
-            lcd.print("Error Code 5");
-            lcd.setCursor(0,1);
-            lcd.print("12V POWER ON/OFF");
-            Serial.print("Fejl-5");
-            Serial.print("\n");
-            waitbutton(); 
-          }
-        }
+              //       if(messure(8,647,703))
+                        if(messure(8,0,512))
+
+                        {
+                        pec(3);
+                        Serial.print("Fejl-3");
+                        Serial.print("\n");
+                        waitbutton(); 
+                        }
+              //       else if(messure(1,647,703))
+                        else if(messure(1,512,512))
+                        {
+                        pec(4);
+                        Serial.print("Fejl-4");
+                        Serial.print("\n");
+                        waitbutton(); 
+                        }
+              //       else if(messure(0,647,703))
+                        else if(messure(0,512,512))
+                        {
+                        pec(5);
+                        Serial.print("Fejl-5");
+                        Serial.print("\n");
+                        waitbutton(); 
+                        } //ENDIF
+        } //ENDIF
+        
        digitalWrite(6,LOW);
         
  //____________________________________________________________________________________________________________________________    
      
-      
 
-   selectPort(9);                                        //Read TP23 (Needs to be 12V made to be about 3.3v)
-    if((analogRead(A0) > 512)) 
-   {
-    selectPort(6);                                      //Read TP22 (Needs to be 5V made to be about 3.3v)
-      if((analogRead(A0) > 512))
-        {
-      selectPort(5);                                   //Read TP19 (Needs to be 4.5V made to be about 3.3v)
-        if((analogRead(A0) > 512)) 
-          {
-          lcd.clear();
-          lcd.print("Error Code 10");
-          lcd.setCursor(0,1);
-          lcd.print("5V POWER MUX");
-          Serial.print("FEJL-10");
-          Serial.print("\n");
-          waitbutton();
+       digitalWrite(6,HIGH);
+       delay(100);   
 
-          }else;
-          lcd.clear();
-          lcd.print("Error Code 11");
-          lcd.setCursor(0,1);
-          lcd.print("5V BOOST SUPPLY");
-          Serial.print("FEJL-11");
-          Serial.print("\n");
-          waitbutton();
-        }
-   }      
+  //         if(messure(9,647,703))                                             
+              if(messure(9,512,512)) 
+              {
+                     //        if(messure(6,607,743))
+                                if(messure(6,512,512))
+                                {
+                                   //        if(messure(5,607,743))
+                                              if(messure(5,512,512)) 
+                                              {
+                                              pec(8);
+                                              Serial.print("FEJL-8");
+                                              Serial.print("\n");
+                                              waitbutton();
+
+                                              }
+                                              else
+                                              {
+                                              pec(9);
+                                              Serial.print("FEJL-9");
+                                              Serial.print("\n");
+                                              waitbutton();
+                                              } //ENDIF
+                                 }//ENDIF
+              }else
+              {
+  //           if(messure(7,647,703))                                             
+                if(messure(7,512,512))
+                {
+                pec(10);
+                Serial.print("Fejl-10");
+                Serial.print("\n");
+                waitbutton(); 
+                }   
           
+  //           else if(messure(4,444,666))
+                else if(messure(4,512,512))
+                {
+                pec(11);
+                Serial.print("Fejl-11");
+                Serial.print("\n");
+                waitbutton(); 
+                }
+                 
+                else
+                {
+                pec(12);
+                Serial.print("Fejl-12");
+                Serial.print("\n");
+                waitbutton(); 
+                }//ENDIF
+
+              }//ENDIF 
+      
+    digitalWrite(6,LOW);
+/*          
             
              if((analogRead(A0) > 512)) 
               {

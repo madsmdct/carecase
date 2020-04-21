@@ -217,8 +217,7 @@ void loop() {
     delay(10);              // wait 1 sec
     lcd.print("    TESTING");     // Print Testing on LCD
     delay(512);              // wait 1 sec
-    
-  
+     
                                          
   // if(messure(9,647,703))                                             
       if(messure(9,512,512))
@@ -307,7 +306,7 @@ void loop() {
  //____________________________________________________________________________________________________________________________    
      
 
-       digitalWrite(6,HIGH);
+       digitalWrite(9,HIGH);
        delay(100);   
 
   //         if(messure(9,647,703))                                             
@@ -363,7 +362,7 @@ void loop() {
 
               }//ENDIF 
       
-    digitalWrite(6,LOW);
+    digitalWrite(9,LOW);
 /*          
             
              if((analogRead(A0) > 512)) 

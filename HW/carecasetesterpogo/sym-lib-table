@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name carecasetester-rescue)(type Legacy)(uri ${KIPRJMOD}/carecasetester-rescue.lib)(options "")(descr ""))
+)

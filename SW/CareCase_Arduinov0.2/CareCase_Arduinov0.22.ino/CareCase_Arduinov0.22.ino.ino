@@ -78,8 +78,10 @@ bool messure(int portnr, int l, int h)
 {
   int x;
   selectPort(portnr);
+  delay(100);
   x = analogRead(A0);
- 
+  Serial.print(x); 
+  Serial.print("\n");
   if(x < l)
   {
    return false;
@@ -219,16 +221,16 @@ void loop() {
     delay(512);              // wait 1 sec
      
                                          
-  // if(messure(9,647,703))                                             
-      if(messure(9,512,512))
-      {
+       if(messure(9,647,703))                                             
+   //  if(messure(9,512,512))
+        {
                                                         
-                     //if(messure(6,607,743))
-                        if(messure(6,512,512))
-                        {
+                         if(messure(6,607,743))
+                     //  if(messure(6,512,512))
+                          {
                                                        
-                               //    if(messure(11,573,777)) 
-                                      if(messure(11,512,512)) 
+                                     if(!messure(11,573,777)) //Husk ! før messure
+                                     //  if(messure(11,512,512)) 
                                       {
                                       pec(1);
                                       Serial.print("FEJL-1");
@@ -236,8 +238,8 @@ void loop() {
                                       waitbutton();
            
                                       
-                                //   if(messure(10,587,766))
-                                      }else if(messure(10,512,512)) 
+                                    }else if(!messure(10,550,766))
+                                //      }else if(messure(10,512,512)) 
                                       {
                                       pec(2);
                                       Serial.print("FEJL-2");
@@ -252,8 +254,8 @@ void loop() {
 
 
             
-                 //    }else if(messure(2,607,743))
-                        }else if(messure(2,512,512))
+                      }else if(messure(2,607,743))
+                    //     }else if(messure(2,512,512))
                         {
                         pec(6);
                         Serial.print("Fejl-6");
@@ -274,8 +276,8 @@ void loop() {
        
       }else
         {
-              //       if(messure(8,647,703))
-                        if(messure(8,0,512))
+                      if(messure(8,647,703))
+                  //       if(messure(8,0,512))
 
                         {
                         pec(3);
@@ -283,16 +285,16 @@ void loop() {
                         Serial.print("\n");
                         waitbutton(); 
                         }
-              //       else if(messure(1,647,703))
-                        else if(messure(1,512,512))
+                      else if(messure(1,647,703))
+                 //        else if(messure(1,512,512))
                         {
                         pec(4);
                         Serial.print("Fejl-4");
                         Serial.print("\n");
                         waitbutton(); 
                         }
-              //       else if(messure(0,647,703))
-                        else if(messure(0,512,512))
+                      else if(messure(0,647,703))
+                  //       else if(messure(0,512,512))
                         {
                         pec(5);
                         Serial.print("Fejl-5");
@@ -300,23 +302,24 @@ void loop() {
                         waitbutton(); 
                         } //ENDIF
         } //ENDIF
-        
+              delay(200);
+
        digitalWrite(6,LOW);
         
  //____________________________________________________________________________________________________________________________    
      
 
        digitalWrite(9,HIGH);
-       delay(100);   
+       delay(3000);   
 
-  //         if(messure(9,647,703))                                             
-              if(messure(9,512,512)) 
+          if(messure(9,647,703))                                             
+     //          if(messure(9,512,512)) 
               {
-                     //        if(messure(6,607,743))
-                                if(messure(6,512,512))
+                             if(!messure(6,607,743))
+                      //           if(messure(6,512,512))
                                 {
-                                   //        if(messure(5,607,743))
-                                              if(messure(5,512,512)) 
+                                           if(messure(5,607,743))
+                                      //         if(messure(5,512,512)) 
                                               {
                                               pec(8);
                                               Serial.print("FEJL-8");
@@ -334,17 +337,18 @@ void loop() {
                                  }//ENDIF
               }else
               {
-  //           if(messure(7,647,703))                                             
-                if(messure(7,512,512))
+                
+              if(messure(7,647,707))                                             
+                // if(messure(7,512,512))
                 {
                 pec(10);
                 Serial.print("Fejl-10");
                 Serial.print("\n");
                 waitbutton(); 
                 }   
-          
-  //           else if(messure(4,444,666))
-                else if(messure(4,512,512))
+         
+           else if(messure(4,444,777))
+      //           else if(messure(4,512,512))
                 {
                 pec(11);
                 Serial.print("Fejl-11");
@@ -361,7 +365,7 @@ void loop() {
                 }//ENDIF
 
               }//ENDIF 
-      
+      delay(200);
     digitalWrite(9,LOW);
 /*          
             

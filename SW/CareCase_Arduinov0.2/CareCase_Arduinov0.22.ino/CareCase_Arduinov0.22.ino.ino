@@ -201,6 +201,9 @@ void setup() {
 
 void loop() {
 
+
+ int ErrorCode = 0;
+ 
   lcd.clear();
 
   lcd.setCursor(0,0);    // tell the screen to write on the top row
@@ -232,20 +235,23 @@ void loop() {
                                      if(!messure(11,573,777)) //Husk ! før messure
                                      //  if(messure(11,512,512)) 
                                       {
-                                      pec(1);
+
+                                      ErrorCode = 1;
+                                    /*pec(1);
                                       Serial.print("FEJL-1");
                                       Serial.print("\n");
                                       waitbutton();
-           
+           */
                                       
                                     }else if(!messure(10,550,766))
                                 //      }else if(messure(10,512,512)) 
                                       {
-                                      pec(2);
+                                      ErrorCode = 2;  
+                            /*        pec(2);
                                       Serial.print("FEJL-2");
                                       Serial.print("\n");
                                       waitbutton();
-                                      } //ENDIF
+                            */          } //ENDIF
 
 
 
@@ -257,19 +263,21 @@ void loop() {
                       }else if(messure(2,607,743))
                     //     }else if(messure(2,512,512))
                         {
-                        pec(6);
+                        ErrorCode = 6;
+                /*      pec(6);
                         Serial.print("Fejl-6");
                         Serial.print("\n");
                         waitbutton();
-                
+                */
               
                         }else
                         {
-                        pec(7);
+                        ErrorCode = 7;
+                /*      pec(7);
                         Serial.print("Fejl-7");
                         Serial.print("\n");
                         waitbutton();
-                
+                */
                         } //ENDIF
      
            
@@ -280,27 +288,32 @@ void loop() {
                   //       if(messure(8,0,512))
 
                         {
-                        pec(3);
+                        ErrorCode = 3;
+                   /*   pec(3);
                         Serial.print("Fejl-3");
                         Serial.print("\n");
                         waitbutton(); 
+                   */     
                         }
                       else if(messure(1,647,703))
                  //        else if(messure(1,512,512))
                         {
-                        pec(4);
+                        ErrorCode = 4;
+                   /*   pec(4);
                         Serial.print("Fejl-4");
                         Serial.print("\n");
-                        waitbutton(); 
+                     */ waitbutton();
+                         
                         }
                       else if(messure(0,647,703))
                   //       else if(messure(0,512,512))
                         {
-                        pec(5);
+                        ErrorCode = 5;
+                  /*    pec(5);
                         Serial.print("Fejl-5");
                         Serial.print("\n");
                         waitbutton(); 
-                        } //ENDIF
+                  */    } //ENDIF
         } //ENDIF
               delay(200);
 
@@ -321,19 +334,21 @@ void loop() {
                                            if(messure(5,607,743))
                                       //         if(messure(5,512,512)) 
                                               {
-                                              pec(8);
+                                              ErrorCode = 8;
+                                         /*   pec(8);
                                               Serial.print("FEJL-8");
                                               Serial.print("\n");
                                               waitbutton();
-
-                                              }
+                                        */
+                                             }
                                               else
                                               {
-                                              pec(9);
+                                              ErrorCode = 9;
+                                         /*   pec(9);
                                               Serial.print("FEJL-9");
                                               Serial.print("\n");
                                               waitbutton();
-                                              } //ENDIF
+                                         */   } //ENDIF
                                  }//ENDIF
               }else
               {
@@ -341,32 +356,41 @@ void loop() {
               if(messure(7,647,707))                                             
                 // if(messure(7,512,512))
                 {
-                pec(10);
+                ErrorCode = 10;  
+            /*  pec(10);
                 Serial.print("Fejl-10");
                 Serial.print("\n");
                 waitbutton(); 
-                }   
+            */  }   
          
            else if(messure(4,444,777))
       //           else if(messure(4,512,512))
                 {
-                pec(11);
+                ErrorCode = 11;
+            /*  pec(11);
                 Serial.print("Fejl-11");
                 Serial.print("\n");
                 waitbutton(); 
-                }
+              */}
                  
                 else
                 {
-                pec(12);
+                ErrorCode = 12;
+            /*  pec(12);
                 Serial.print("Fejl-12");
                 Serial.print("\n");
                 waitbutton(); 
-                }//ENDIF
+            */  }//ENDIF
 
               }//ENDIF 
       delay(200);
     digitalWrite(9,LOW);
+
+
+    pec(ErrorCode);
+    
+
+    waitbutton();
 /*          
             
              if((analogRead(A0) > 512)) 
@@ -530,11 +554,7 @@ void loop() {
       delay(255);
       lcd.clear();
 
-      if((analogRead(A0) > 512))
-      {
-      lcd.print("       OK");
-      waitbutton();
-      }
+      
       
 
           }

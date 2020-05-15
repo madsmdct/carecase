@@ -30,45 +30,45 @@ void selectPort(int portNo)
   if (portNo & 0x08) //4067 Port A
   {
     digitalWrite(5, HIGH);
-    Serial.print(digitalRead(5));
+    Serial.print("1");
   }
   else
   {
     digitalWrite(5, LOW);
-    Serial.print(digitalRead(5));
+    Serial.print("0");
   }
 
   if (portNo & 0x04) //4067 Port B
   {
     digitalWrite(4, HIGH);
-    Serial.print(digitalRead(4));
+    Serial.print("1");
   }
   else
   {
     digitalWrite(4, LOW);
-    Serial.print(digitalRead(4));
+    Serial.print("0");
   }
 
   if (portNo & 0x02) //4067 Port C
   {
     digitalWrite(3, HIGH);
-    Serial.print(digitalRead(3));
+    Serial.print("1");
   }
   else
   {
     digitalWrite(3, LOW);
-    Serial.print(digitalRead(3));
+    Serial.print("0");
   }
 
   if (portNo & 0x01) //4067 Port D
   {
     digitalWrite(2, HIGH);
-    Serial.print(digitalRead(2));
+    Serial.print("1");
   }
   else
   {
     digitalWrite(2, LOW);
-    Serial.print(digitalRead(2));
+    Serial.print("0");
   }
 
   Serial.print("]\n");
@@ -171,12 +171,26 @@ void pec(int x)
     break;
   }
 }
+//____________________________________________________________________________________________________________________________
+
+void sound(int y)
+{
+//  digitalWrite(8,HIGH);
+  for(int i = 0 ; i < 40; i++)
+  {
+    digitalWrite(7, HIGH);
+    delay(y);
+    digitalWrite(7, LOW);
+    delay(y);
+  }
+ // digitalWrite(8,LOW);
+}
 
 //____________________________________________________________________________________________________________________________
 
 void waitbutton()
 {
-  // for (int i = 0; i <= 50; i++)
+  // for (int i = 0; i <= 100; i++)
   for EVER
   {
     if ((digitalRead(17) == HIGH))
@@ -193,7 +207,14 @@ void waitbutton()
 
 void setup()
 {
-
+  pinMode(2,OUTPUT);
+  pinMode(3,OUTPUT);
+  pinMode(4,OUTPUT);
+  pinMode(5,OUTPUT);
+  pinMode(7,OUTPUT);
+  
+  digitalWrite(8,HIGH);
+  
   Serial.begin(9600);
 
   lcd.init(); //initialize lcd screen
@@ -217,6 +238,7 @@ void setup()
 //____________________________________________________________________________________________________________________________
 
 
+
 void loop()
 {
 
@@ -229,14 +251,16 @@ void loop()
   lcd.setCursor(0, 1); // tell the screen to write on the bottom row
   lcd.print("AND PRESS START");
   delay(100);
-
+ 
   waitbutton();
   digitalWrite(6, HIGH);
-  delay(512);               // wait 0,1sec
+  delay(512);               // wait 0,5sec
   lcd.clear();              // clear lcd
-  delay(10);                // wait 1 sec
-  lcd.print("    TESTING"); // Print Testing on LCD
-  delay(512);               // wait 1 sec
+  delay(10);                // wait 0,01 sec
+  lcd.print("    TESTING"); // Print Testing on LCD 
+  delay(100);        // ...for 0,1 sec
+
+  
 
 //____________________________________________________________________________________________________________________________
 
@@ -329,11 +353,16 @@ void loop()
     } //ENDIF
 
   } //ENDIF
-  delay(200);
-  
+  delay(1);
+  sound(1);
+  delay(32);
+  sound(1);
+  delay(32);
+  sound(1);
   digitalWrite(9, LOW);
 
 //____________________________________________________________________________________________________________________________
+
 
   pec(errorCode);
 

@@ -20,7 +20,7 @@ P 2475 1975
 AR Path="/5E3BA6A3/5E3DEA4C" Ref="J?"  Part="1" 
 AR Path="/5E3DBE35/5E3DEA4C" Ref="J15-TP1"  Part="1" 
 F 0 "J15-TP1" H 1675 2000 50  0000 R CNN
-F 1 "Conn_01x01_Male" H 2447 1998 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 2425 1975 50  0000 R CNN
 F 2 "MM:P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad" H 2475 1975 50  0001 C CNN
 F 3 "~" H 2475 1975 50  0001 C CNN
 	1    2475 1975
@@ -214,14 +214,7 @@ Wire Wire Line
 	1375 3375 1375 3475
 Wire Wire Line
 	1275 1875 1375 1875
-Wire Wire Line
-	1375 1875 1375 3275
 Connection ~ 1375 3375
-Wire Wire Line
-	1275 3275 1375 3275
-Connection ~ 1375 3275
-Wire Wire Line
-	1375 3275 1375 3375
 Text HLabel 1725 4200 0    50   Input ~ 0
 TP4
 Text HLabel 2125 4400 0    50   Input ~ 0
@@ -250,11 +243,7 @@ Wire Wire Line
 Wire Wire Line
 	1275 3175 2275 3175
 Wire Notes Line
-	3675 1925 3675 3250
-Wire Notes Line
-	3675 3250 3425 3250
-Wire Notes Line
-	3425 3250 3425 1925
+	3675 3350 3425 3350
 Wire Notes Line
 	3425 1925 3675 1925
 Wire Wire Line
@@ -266,4 +255,32 @@ Wire Wire Line
 Connection ~ 1725 2275
 Wire Wire Line
 	1725 2275 2275 2275
+Wire Wire Line
+	1375 1875 1375 3375
+$Comp
+L Connector:Conn_01x01_Male J?
+U 1 1 5F295961
+P 2475 3275
+AR Path="/5E3BA6A3/5F295961" Ref="J?"  Part="1" 
+AR Path="/5E3DBE35/5F295961" Ref="J28-TP25"  Part="1" 
+F 0 "J28-TP25" H 1675 3300 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 2447 3298 50  0000 R CNN
+F 2 "MM:P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad" H 2475 3275 50  0001 C CNN
+F 3 "~" H 2475 3275 50  0001 C CNN
+	1    2475 3275
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	3425 1925 3425 3350
+Wire Notes Line
+	3675 1925 3675 3350
+Wire Wire Line
+	1275 3275 2225 3275
+Text HLabel 2225 4550 0    50   Input ~ 0
+TP25
+Wire Wire Line
+	2225 4550 2225 3275
+Connection ~ 2225 3275
+Wire Wire Line
+	2225 3275 2275 3275
 $EndSCHEMATC

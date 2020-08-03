@@ -49,6 +49,7 @@ F0 "testpoints" 50
 F1 "testpoints.sch" 50
 F2 "TP4" I R 4850 3900 50 
 F3 "TP5" I R 4850 4000 50 
+F4 "TP25" I R 4850 4100 50 
 $EndSheet
 Wire Wire Line
 	5275 3100 3975 3100
@@ -160,10 +161,9 @@ NoConn ~ 5925 4300
 NoConn ~ 6125 4300
 NoConn ~ 6225 4300
 NoConn ~ 6325 4300
-NoConn ~ 6475 3800
 NoConn ~ 6475 3700
 NoConn ~ 6475 3600
-NoConn ~ 6475 3500
+NoConn ~ 6475 3800
 NoConn ~ 6475 3300
 NoConn ~ 6475 3200
 NoConn ~ 6475 2900
@@ -478,4 +478,14 @@ Wire Wire Line
 	3750 4350 3750 3950
 Wire Wire Line
 	3750 3950 3400 3950
+Wire Wire Line
+	4850 4100 5075 4100
+Wire Wire Line
+	5075 4100 5075 5875
+Wire Wire Line
+	5075 5875 6775 5875
+Wire Wire Line
+	6775 3500 6475 3500
+Wire Wire Line
+	6775 3500 6775 5875
 $EndSCHEMATC

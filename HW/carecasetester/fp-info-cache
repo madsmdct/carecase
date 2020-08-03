@@ -1,4 +1,4 @@
-17031278571058746
+17040804332558615
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -51359,12 +51359,54 @@ P50-E-120-G(Pogo)_0.7mmHole_1.5mmPad
 1
 1
 MM
+Primary_winding
+
+
+0
+0
+0
+MM
 RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_CircularMountingHoles
 Alps rotary encoder, EC12E... with switch, vertical shaft, mounting holes with circular drills, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
 rotary encoder
 0
 7
 6
+MM
+Sekunder_winding_WITH_Centerpoint
+
+
+0
+0
+0
+MM
+Skrueterminal2Pin_5.08m_pinafstand_1.3mm_Huller
+
+
+0
+2
+2
+MM
+Skrueterminal3Pin_5.08m_pinafstand_1.3mm_Huller
+
+
+0
+3
+3
+MM
+Skrueterminal4Pin_5.08m_pinafstand_1.3mm_Huller
+
+
+0
+4
+4
+MM
+Skrueterminal_5.08m_pinafstand_1.3mm_Huller
+
+
+0
+3
+3
 MM
 TO-252-3_TabPin2
 TO-252 / DPAK SMD package, http://www.infineon.com/cms/en/product/packages/PG-TO252/PG-TO252-3-1/

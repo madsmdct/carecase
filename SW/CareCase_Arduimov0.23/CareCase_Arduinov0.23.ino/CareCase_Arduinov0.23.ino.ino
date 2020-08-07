@@ -1,6 +1,6 @@
 //  __________________
 // | CARE_CASE_TESTER |
-// | MDCT, 03-08-2020 |
+// | MDCT, 07-08-2020 |
 // |__________________|
 
 // Including libraries
@@ -19,7 +19,7 @@ int D5;
 //the first parameter is the I2C address
 //the second parameter is how many rows are on your screen
 //the third parameter is how many columns are on your screen
-LiquidCrystal_I2C lcd(0x27, 16, 2);
+LiquidCrystal_I2C lcd(0x3F, 16, 2); //If I2C board is swaped and display shows "SQUARES" try changing adress to 0x27 instaid of 0x3F
 
 //____________________________________________________________________________________________________________________________
 

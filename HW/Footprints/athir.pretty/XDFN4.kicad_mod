@@ -1,0 +1,50 @@
+(module XDFN4 (layer F.Cu) (tedit 5DD5099B)
+  (fp_text reference USB (at -0.01 1.96) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value XDFN4 (at 0.01 -2.02) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_line (start -0.75 -0.75) (end -0.27 -0.75) (layer F.SilkS) (width 0.01))
+  (fp_line (start -0.625 -0.625) (end -0.625 0.625) (layer F.SilkS) (width 0.1))
+  (fp_line (start 0.625 -0.625) (end 0.625 0.625) (layer F.SilkS) (width 0.1))
+  (fp_line (start -0.625 0.625) (end 0.625 0.625) (layer F.SilkS) (width 0.1))
+  (fp_line (start -0.625 -0.625) (end 0.625 -0.625) (layer F.SilkS) (width 0.1))
+  (pad 1 smd custom (at -0.62 0.39 180) (size 0.25 0.25) (layers F.Cu F.Paste F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy 0.13 -0.13) (xy -0.48 -0.13) (xy -0.48 -0.07) (xy -0.48 -0.01) (xy -0.12 0.22)
+         (xy 0.13 0.22)) (width 0.001))
+    ))
+  (pad 2 smd custom (at 0.62 0.39 180) (size 0.25 0.25) (layers F.Cu F.Paste F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy -0.13 -0.13) (xy 0.48 -0.13) (xy 0.48 -0.07) (xy 0.48 -0.01) (xy 0.12 0.22)
+         (xy -0.13 0.22)) (width 0.001))
+    ))
+  (pad 2 smd custom (at 0.62 -0.39) (size 0.25 0.25) (layers F.Cu F.Paste F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy 0.13 -0.13) (xy -0.48 -0.13) (xy -0.48 -0.07) (xy -0.48 -0.01) (xy -0.12 0.22)
+         (xy 0.13 0.22)) (width 0.001))
+    ))
+  (pad 2 smd custom (at -0.62 -0.39) (size 0.25 0.25) (layers F.Cu F.Paste F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy -0.13 -0.13) (xy 0.48 -0.13) (xy 0.48 -0.07) (xy 0.48 -0.01) (xy 0.12 0.22)
+         (xy -0.13 0.22)) (width 0.001))
+    ))
+  (pad 1 smd custom (at -0.2 -4.1) (size 1.524 1.524) (layers F.Cu F.Paste F.Mask)
+    (zone_connect 0)
+    (options (clearance outline) (anchor rect))
+    (primitives
+    ))
+)

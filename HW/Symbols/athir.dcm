@@ -1,0 +1,70 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74CBTLV3253
+D Dual 1-of-4 multiplexer/demultiplexer
+K TTL Mux MUX4
+F http://www.nxp.com/documents/data_sheet/74CBTLV3253.pdf
+$ENDCMP
+#
+$CMP 74LS11
+D Triple 3-input AND
+K TTL And3
+F http://www.ti.com/lit/gpn/sn74LS11
+$ENDCMP
+#
+$CMP 74LVC74
+F http://www.mouser.com/ds/2/149/74LCX74-1006560.pdf
+$ENDCMP
+#
+$CMP AD9851
+D AD9851 180 MHz DAC/DDS Synthesizer
+F AD9851.pdf
+$ENDCMP
+#
+$CMP AD9954
+K DDS AD9954
+F http://www.analog.com/media/en/technical-documentation/data-sheets/AD9954.pdf
+$ENDCMP
+#
+$CMP ASVMB-30MXYT
+D 30 Mhz 10 PPM Standard Clock Oscillator
+F http://www.mouser.com/ds/2/3/ASVMB-35165.pdf
+$ENDCMP
+#
+$CMP Antenna_Shield
+D Antenna symbol with extra pin for shielding
+K antenna
+$ENDCMP
+#
+$CMP DX4RNW5HJ3R1000
+D USB Waterproof JAE
+F https://media.digikey.com/pdf/Data%20Sheets/JAE%20PDFs/DX4RNW5HJ3_Dwg.pdf
+$ENDCMP
+#
+$CMP MMA8453Q
+F https://www.mouser.dk/datasheet/2/302/MMA8453Q-1127299.pdf
+$ENDCMP
+#
+$CMP NC7SV11
+D 3-input AND
+K And
+$ENDCMP
+#
+$CMP RC1602A
+D LCD 16x2 Alphanumeric gray backlight, 3 or 5 V VDD
+K LCD 16x2 Alphanumeric gray backlight, 3 or 5 V VDD
+F http://www.raystar-optronics.com/down.php?ProID=18
+$ENDCMP
+#
+$CMP RJ11
+D RJ12 connector with 2 shield pins
+K RJ12 connector
+$ENDCMP
+#
+$CMP TXB0108PWR
+D 8-bit bidirectional voltage level translator with auto-direction sensing USON package
+K bidirectional voltage level translator
+F http://www.ti.com/lit/ds/symlink/txb0108.pdf
+$ENDCMP
+#
+#End Doc Library

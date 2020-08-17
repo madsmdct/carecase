@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GBU6K_+AA-_Bridge
+D Diode bridge, +ve/AC/AC/-ve
+K rectifier ACDC
+F ~
+$ENDCMP
+#
+$CMP IRF4905
+D -74A Id, -55V Vds, Single P-Channel HEXFET Power MOSFET, 20mOhm Ron, TO-220AB
+K Single P-Channel HEXFET Power MOSFET
+F http://www.infineon.com/dgdl/irf4905.pdf?fileId=5546d462533600a4015355e32165197c
+$ENDCMP
+#
+$CMP IRFR9120NTRPBF
+D -23A Id, -100V Vds, HEXFET P-Channel MOSFET, TO-220
+K HEXFET P-Channel MOSFET
+F http://www.irf.com/product-info/datasheets/data/irf9540n.pdf
+$ENDCMP
+#
+$CMP LM338T_NOPB_5A
+D Negative 100mA 35V Adjustable Linear Regulator, TO-92
+K Adjustable Voltage Regulator 100mA Negative
+F http://www.ti.com/lit/ds/symlink/lm337l.pdf
+$ENDCMP
+#
+$CMP RB152_+A-A_Bridge
+D Diode bridge, +ve/AC/-ve/AC
+K rectifier ACDC
+F ~
+$ENDCMP
+#
+#End Doc Library
